@@ -1,0 +1,119 @@
+:root {
+    --sfl-light-blue: rgb(6, 144, 176);
+    --sfl-dark-blue: rgb(21, 48, 95);
+    --sfl-gray: rgb(184, 184, 184);
+    --sfl-white: rgb(234, 234, 234);
+  }
+
+body {
+    background-image: linear-gradient(to right, var(--sfl-gray), var(--sfl-white));
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--sfl-white);
+}
+
+nav {
+    display: flex;
+    background-image: linear-gradient(to right, var(--sfl-dark-blue), var(--sfl-light-blue));        justify-content: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    z-index: 1;
+}
+    
+nav ul {
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    list-style: none;
+    justify-content: space-around;
+}
+    
+nav ul li a {
+    font-size: 16px;
+    padding: 0 15px;
+    color: var(--sfl-white);
+    transition: 0.2s;
+    text-transform: uppercase;
+}
+
+.hero {
+    padding-top: 70px;
+    transform-style: preserve-3d;
+    transition: transform 2s;
+        }
+
+.hero img {
+    border-style: none;
+    border-radius: 50%;
+    margin: 0 auto;
+    max-width: 440px;
+    display: block;
+}
+
+.hero:hover {
+    transform: rotateY(180deg);
+}
+
+.logo-front {
+    position: absolute;
+  }
+  
+  .logo-front, 
+  .logo-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .logo-back {
+    transform: rotateY(180deg);
+  }
+
+  #aboutus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutus {
+    width: 90%;
+    height: 85vh;
+    background-color: white;
+    margin: auto;
+    margin-top: 1100px;
+    padding-top: 20px;
+  }
+
+  .aboutus-section {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+    }
+
+    .aboutus-image {
+      height: 450px;
+      width: 470px;
+      /* background-image: url("assets/javi-headshot.png"); */
+      background-size: cover;
+      background-position: center;
+      border: 5px solid var(--sfl-light-blue);
+      border-radius: 70%;
+      background-image: linear-gradient(to right, #09162C, var(--sfl-light-blue));
+      }
+
+      #javi {
+      height: 445px;
+      width: auto;
+      border: 8px solid var(--sfl-dark-blue);
+      border-radius: 70%;
+      }
