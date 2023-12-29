@@ -44,7 +44,7 @@ nav ul li a {
 }
 
 .hero {
-    padding-top: 70px;
+    padding-top: 150px;
     transform-style: preserve-3d;
     transition: transform 2s;
         }
@@ -53,7 +53,7 @@ nav ul li a {
     border-style: none;
     border-radius: 50%;
     margin: 0 auto;
-    max-width: 440px;
+    max-width: 540px;
     display: block;
 }
 
@@ -85,11 +85,12 @@ nav ul li a {
 
   .aboutus {
     width: 90%;
-    height: 85vh;
+    height: 80vh;
     background-color: white;
     margin: auto;
     margin-top: 1100px;
-    padding-top: 20px;
+    padding: 30px;
+    border: 5px solid var(--sfl-dark-blue);
   }
 
   .aboutus-section {
@@ -98,22 +99,36 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     flex-flow: wrap;
+
+    }
+
+    .aboutus-text {
+      color: black;
+      width: 400px;
+      height: auto;
+      border: 5px solid black;
+      /* padding-left: 100px; */
+      margin-left: 200px;
+      margin-right: -50px;
     }
 
     .aboutus-image {
-      height: 450px;
-      width: 470px;
+      height: 350px;
+      width: 370px;
       /* background-image: url("assets/javi-headshot.png"); */
       background-size: cover;
       background-position: center;
       border: 5px solid var(--sfl-light-blue);
       border-radius: 70%;
       background-image: linear-gradient(to right, #09162C, var(--sfl-light-blue));
+      /* margin-left: -550px; */
       }
 
       #javi {
-      height: 445px;
+      height: 345px;
       width: auto;
       border: 8px solid var(--sfl-dark-blue);
       border-radius: 70%;
+      background-size: cover;
+      background-position: left;
       }
