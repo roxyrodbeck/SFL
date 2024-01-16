@@ -16,22 +16,22 @@
 
     <nav>
         <ul>
+            <li><a href="#home">Home</a></li>
             <li><a href="#aboutus">About Us</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contactus">Contact Us</a></li>
+            <li><a href="#merch">Merch</a></li>
         </ul>
 
     </nav>
 
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="logo-front">
             <img src="assets/SFL-logo.PNG">
         </div>
         <div class="logo-back">
-            <img src="assets/SFL-work-1.jpg">
+            <p class="review-insert">Test test</p>
         </div>
-        <!-- <h1>South Florida Local</h1>
-        <h2>Equipment Service</h2> -->
     </section>
 
     <section id="aboutus" class="aboutus">
@@ -43,7 +43,7 @@
             <div class="aboutus-text">
                 <h3>South Florida Equipment Service</h3>
                 <p>We are a family owned and operated company based out of South Florida.</p>
-                <p>SFL believes in clear communication and</p>
+                <p>You've invested in good equipment, let us help you take care of it.</p>
             </div>
             </div>
             </div>
@@ -53,8 +53,9 @@
 
 
     <section id="services" class="service">
+        <div class = "service-container">
         <h2>Services</h2>
-            
+        </div>
             <div class="tire-changers tile">
                 <div class="text">
                     <h3 class="service-name">Tire Changers</h3>
@@ -83,5 +84,36 @@
             </div>
     </section>
 
+    <section id="contactus" class="contact">
+        <h2>Contact Us</h2>
+        <p>Use this form to get in touch. Quotes, comments. We would love to hear from you.</p>
+   
+        <form action="contact.php" method="POST" class="contact-form">
+
+            <div class="contact-details">
+
+                <label for="name">Name</label>
+                <input type="text" name="name" id="yourname" placeholder="Yourname">
+
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject" placeholder="Your message">
+            
+                <label for="email">Email Address</label>
+                <input type="email" name="email" placeholder="email@example.com" id="email" placeholder="Your email address">
+
+        </div>
+
+        <div class="message">
+
+            <label for="msg">Message</label>
+            <textarea id="msg" rows="15" placeholder="Quotes, comments, let us know how we can be of service."></textarea>
+            <button type="submit">Submit</button>
+
+        </div>
+            
+            </form>
+
+    </section>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
