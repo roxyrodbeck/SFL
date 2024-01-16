@@ -7,7 +7,7 @@
 
 body {
     background-image: linear-gradient(to right, var(--sfl-gray), var(--sfl-white));
-    margin: 0;
+    margin: auto;
     padding: 0;
 }
 
@@ -19,7 +19,7 @@ h1 {
 
 nav {
     display: flex;
-    background-image: linear-gradient(to right, var(--sfl-dark-blue), var(--sfl-light-blue));        justify-content: center;
+    background-image: linear-gradient(to right, var(--sfl-dark-blue), var(--sfl-light-blue));
     justify-content: center;
     position: fixed;
     width: 100%;
@@ -41,6 +41,11 @@ nav ul li a {
     color: var(--sfl-white);
     transition: 0.2s;
     text-transform: uppercase;
+}
+
+#home.hero {
+  display: block;
+  height: 100vh;
 }
 
 .hero {
@@ -77,18 +82,34 @@ nav ul li a {
     transform: rotateY(180deg);
   }
 
-  #aboutus {
+  .logo-back .review-insert {
+    border: 2px solid var(--sfl-dark-blue);
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 540px;
+    height: 340px;
+    background-image: linear-gradient(to right, var(--sfl-light-blue), var(--sfl-gray));
+  }
+
+  p.review-insert {
+    font-style: italic;
+    font-size: 30px;
+    padding: 30px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .aboutus {
+  #aboutus.aboutus {
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     width: 90%;
-    height: 80vh;
+    height: 100vh;
     background-color: white;
     margin: auto;
-    margin-top: 1100px;
     padding: 30px;
     border: 5px solid var(--sfl-dark-blue);
   }
@@ -97,28 +118,16 @@ nav ul li a {
     height: 500px;
     width: 1000px;
     padding: 20px;
-    display: block;
-    position:static;
-    justify-content: space-between;
-    align-items:flex-start;
-    /* border: 5px solid red; */
   }
 
-  /* .aboutus-section {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    padding: 30px;
-    margin-top: -100px;
-    height: auto;
-    width: 800px;
-  }*/
     h2 {
       color: var(--sfl-light-blue);
       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       font-weight: bold;
     }
+
     .container h2 {
+      vertical-align: middle;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -136,10 +145,16 @@ nav ul li a {
       border: 5px solid var(--sfl-gray);
       padding: 10px;
       margin-left: 550px;
-      /* display: block;
-      align-items: center;
-      justify-content: right; */
       margin-top: -280px;
+    }
+
+    .aboutus-text h3 {
+      justify-content: center;
+      display: flex;
+    }
+
+    .aboutus-text p {
+      font-style: italic;
     }
 
     .aboutus-image {
@@ -165,16 +180,14 @@ nav ul li a {
       display: flex;
       align-items: center;
       justify-content: center;
+      height: 100vh;
       }
     
     .service {
       width: auto;
       height: 80vh;
-      /* background-color: white; */
       margin: auto;
       margin-top: 500px;
-      /* padding: 30px; */
-      border: 5px solid var(--sfl-dark-blue);
       }
 
     .service-name {
@@ -182,6 +195,16 @@ nav ul li a {
       justify-content: center;
       align-items: center;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+
+    #services .service-container h2 {
+      margin-top: -225px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
       }
     
    /* h2 {
@@ -221,7 +244,7 @@ nav ul li a {
     .text {
         position: absolute;
         height: 65px;
-        width: 85%;
+        width: 86.5%;
         left: 0;
         bottom: 0;
         /* z-index: 2; */
@@ -248,10 +271,128 @@ nav ul li a {
         display: block;
         }
       
-      /* .button {
-        border: 5px solid lightblue;
+      .button {
+        border: 5px solid var(--sfl-light-blue);
         border-radius: 10px;
         width: 160px;
         margin-bottom: 100px;
         margin-left: 10px;
-        } */
+        }
+
+        .contact {
+          width: 100%;
+          height: 100vh;
+          padding: 75px 0 50px 0;
+          text-align: center;
+          background-color: var(--sfl-dark-blue)
+          }
+      
+      .contact p {
+          margin-bottom: 50px;
+          }
+      
+      .contact h2, .contact p {
+          color: white;
+          }
+      
+      .contact-form {
+          max-width: 800px;
+          display: flex;
+          text-align: left;
+          max-width: 1100px;
+          margin: 0 auto;
+          color: white;
+          }
+      
+      .contact-form label {
+          display: block;
+          margin-bottom: 9px;
+          }
+      
+      .message {
+          display: flex;
+          flex-direction: column;
+          width: 60%;
+          }
+      
+      .message textarea {
+          border-radius: 5px;
+          border: 0px;
+          }
+      
+      .contact-details {
+          flex: 1;
+          margin-right: 50px;
+          }
+      
+      .contact-details input {
+          width: 100%;
+          border-radius: 5px;
+          border: 0px;
+          padding: 15px 20px;
+          margin-bottom: 20px;
+          }
+      
+      .message button {
+          color: rvar(--sfl-dark-blue);
+          border: 0;
+          border-radius: 5px;
+          background: lightblue;
+          width: 140px;
+          height: 40px;
+          margin-top: 40px;
+          margin-left: auto;
+          text-transform: uppercase;
+          font-weight: bold;
+          cursor: pointer;
+          transition: 0.3x;
+          }
+      
+      .message button:hover {
+          background: black;
+          color: white;
+          transition: 0.2s;
+          }
+
+      footer {
+          width: 100%;
+          height: auto;
+      }
+
+      .socials {
+        color: white;
+        list-style: none;
+        width: 100%;
+        height: auto;
+      }
+
+      li {
+        list-style: none;
+        display: inline-block;
+        padding: 10px;
+      }
+      
+      /* footer {
+          height: 90px;
+          background-color: #1f2027;
+          }
+      
+      foot .container {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          }
+      
+      .social-media a i{
+          color: white;
+          transition: 0.2s;
+          }
+      
+      .social-media a i:hover {
+          color: lightblue;
+          transition: 0.2s;
+          }
+      
+      .copyright {
+          color: white;
+          } */
